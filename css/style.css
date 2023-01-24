@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 200px auto;
+    height: 400px;
+    width: 300px;
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#nome{
+    font-size: 14pt;
+    text-align: center;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#current_calc{
+    color:rgb(53, 52, 52);
+    font-size: 12pt;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    min-height: 20px;
+}
+
+#current_calc, #dig_calc{
+    overflow-wrap: break-word;
+    padding: 5px;
+}
+
+#dig_calc{
+    color:rgb(5, 5, 5);
+    background-color: rgb(226, 226, 226);
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 14pt;
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid rgb(26, 26, 26);
+    min-height: 40px;
+    border-radius: 6px;
+}
+
+#buttons{
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.botao{
+    height: 35px;
+    width: 65px;
+    background-color: rgb(185, 185, 185);
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.botao:hover{
+    cursor:pointer;
+    border: 2px solid black;
+}
+
+.numero{
+    background-color: white;
+    font-size: 14pt;
+}
+
+.numero:hover{
+    font-size: 18pt;
+}
+
+#igual{
+    background-color: rgb(89, 131, 247);
+    grid-column: span 2;
+    width: 135px;
+    font-size: 16pt;
+    border: 2px solid black;
+}
+
+.operadores{
+    font-size: 18pt;
+}
+
+.operadores:hover{
+    font-size: 18pt;
+}
